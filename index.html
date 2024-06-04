@@ -10,56 +10,18 @@
     <!-- [if lt IE 9]
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     [endif] -->
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #e6e4d9;
-            background-image: url(images/pattern.png);
-        }
-
-        #mainheader {
-            background-color: #a593c2;
-        }
-
-        nav {
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu {
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .searchbox {
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
-        #main {
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            clear: both;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
     <header id="mainheader">
         <nav>
-            <img src="images/cake.svg" height="55" />
+            <ul>
+                <li><img src="images/cake.svg" height="55" /></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pieoverview.html">All pies</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -74,6 +36,7 @@
                 <li><a href="cheesecakes.html">Cheese cakes</a></li>
                 <li><a href="fruitpies.html">Fruit pies</a></li>
                 <li><a href="seasonalpies.html">Seasonal pies</a></li>
+                <li><a href="#promos">Promotions</a></li>
             </ul>
             <input type="search" class="searchbox" placeholder="Search our store" />
         </aside>
@@ -109,8 +72,11 @@
                     Bethany is famous for using only the best ingredients. This way, we can make sure that our pies are
                     absolutely the best.
                 </p>
+                <p>
+                    Download our full <a href="downloads/Price list.zip">price list</a>
+                </p>
             </article>
-            <section>
+            <section id="promos">
                 <h3 style="font-family: verdana;">Our weekly promotions</h3>
                 <h4>Cheesecake</h4>
                 $12.95 - serves 4<br>
@@ -121,6 +87,9 @@
             <p>
                 Our address is
             <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+            </p>
+            <p>
+                Contact us via <a href="mailto:info@bethanyspieshop.com">email</a>
             </p>
             <small>
                 &copy;2024 Bethany's Pie Shop - All rights reserved
